@@ -1,0 +1,65 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+
+.main.touched {
+  background-color: #ff4d4d;
+  transition: background-color 0.5s ease;
+}
+
+.video {
+  width: 640px;
+  height: 480px;
+  border: 4px solid #007acc;
+  border-radius: 8px;
+  background-color: #1c1c1c;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.message {
+  margin-top: 16px;
+  font-size: 2rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.control {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+}
+
+.btn {
+  padding: 12px 28px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, #4a90e2, #007acc);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #3a78c2, #005f99);
+  transform: scale(1.05);
+}
+
+.btn:active {
+  background: #004d80;
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 6px #007acc;
+}
